@@ -12,7 +12,7 @@ public class Dossier extends Component{
 
     @Override
     public List<Component> getChildren(){
-        return null;
+        return children;
     }
 
     @Override
