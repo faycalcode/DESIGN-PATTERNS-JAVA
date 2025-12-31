@@ -1,24 +1,29 @@
 package State;
 
 public class AudioContext implements AudioOperations{
-    private AudioStates current;
+    private AudioStates state;
+
+    public AudioContext(){
+        setState(new AudioStop());
+        state.setContext(this);
+    }
 
     public void setState(AudioStates s){
-        current = s;
+        state = s;
     }
 
     @Override
-    public void play(AudioContext c){
-        current.play(this);
+    public void play(){
+        state.play();
     }
 
     @Override
-    public void pause(AudioContext c){
-        current.pause(this);
+    public void pause(){
+        state.pause();
     }
 
     @Override
-    public void stop(AudioContext c){
-        current.stop(this);
+    public void stop(){
+        state.stop();
     }
 }
