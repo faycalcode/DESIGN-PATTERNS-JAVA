@@ -8,7 +8,6 @@ public class MyMain {
         Producteur p1 = new Producteur("p1", f);
         Producteur p2 = new Producteur("p2", f);
         Producteur p3 = new Producteur("p3", f);
-
         Thread t1 = new Thread(p1);
         Thread t2 = new Thread(p2);
         Thread t3 = new Thread(p3);
