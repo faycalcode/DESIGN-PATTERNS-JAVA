@@ -23,8 +23,10 @@ public class MyMain {
         t1.join();
         t2.join();
         t3.join();
-        c1.halt = true;
-        c2.halt = true;
+
+        Consomateur.halt = true;
+        //c1.halt = true;
+        //c2.halt = true;
 
     }
 }

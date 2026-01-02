@@ -1,7 +1,7 @@
 package ProducteurConsomateur;
 
 public class Consomateur implements Runnable{
-    public volatile boolean halt;
+    public static volatile boolean halt;
     private String name;
     private File pipe;
 
