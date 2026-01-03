@@ -18,12 +18,14 @@ public class Etudiant implements Runnable{
             boolean aMange = false;
             while(!aMange){
                 for(Table t : tables){
-                    t.tentative(this,temps);
-                    if(t.isFree()) {notifyAll();}
+                    if(t.isFree()){
+                        aMange = true;
+                        t.tentative(this,temps);
+                        break;
+                    }
                 }
-
             }
-            if(!aMange) Thread.sleep(200);
+            if(!aMange) Thread.sleep(100);
         }
         catch (InterruptedException e){
 

@@ -20,4 +20,8 @@ public class Table {
     boolean isFree(){
         return accessible;
     }
+
+    public Integer getNumero() {
+        return numero;
+    }
 }

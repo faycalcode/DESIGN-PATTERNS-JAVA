@@ -12,12 +12,12 @@ public class MyMain {
         t.add(t1);
         t.add(t2);
         t.add(t3);
-        Etudiant e1 = new Etudiant("Polo",5,t);
+        Etudiant e1 = new Etudiant("Polo",4,t);
         Etudiant e2 = new Etudiant("Fay",2,t);
-        Etudiant e3 = new Etudiant("Coco",1,t);
-        Etudiant e4 = new Etudiant("Lola",3,t);
+        Etudiant e3 = new Etudiant("Coco",5,t);
+        Etudiant e4 = new Etudiant("Lola",7,t);
         Etudiant e5 = new Etudiant("Mumu",5,t);
-        Etudiant e6 = new Etudiant("Pierre",6,t);
+        Etudiant e6 = new Etudiant("Pierre",9,t);
 
         Thread tr1 = new Thread(e1);
         Thread tr2 = new Thread(e2);
