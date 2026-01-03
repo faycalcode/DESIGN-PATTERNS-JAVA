@@ -2,7 +2,7 @@ package Nthread;
 
 public class MonRunnable implements Runnable{
     private void travail(){
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 5; i++){
             System.out.println(i);
         }
     }
