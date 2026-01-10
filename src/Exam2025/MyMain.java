@@ -2,6 +2,7 @@ package Exam2025;
 
 public class MyMain {
     public static void main(String[] args) throws InterruptedException {
+
         int number = 99;
         Person[] persons = new Person[number];
         Pot[] pots = new Pot[number];
